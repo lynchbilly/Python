@@ -9,21 +9,20 @@ def main():
 
 
 def convert(fraction):
-    while True:
-        try:
-            x, y = fraction.split("/")
-            x = int(x)
-            y = int(y)
-            
-            if y == 0:
-                raise ZeroDivisionError
-            if x > y:
-                raise ValueError
-            
-            return round((x / y) * 100)
-            
-        except (ValueError, ZeroDivisionError):
-            raise
+    try:
+        x, y = fraction.split("/")
+        x = int(x)
+        y = int(y)
+        
+        if y == 0:
+            raise ZeroDivisionError
+        if x > y:
+            raise ValueError
+        
+        return round((x / y) * 100)
+        
+    except (ValueError, ZeroDivisionError):
+        raise
 
 
 def gauge(percentage):

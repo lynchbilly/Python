@@ -47,7 +47,7 @@ def main():
     input_image = ImageOps.fit(input_image, size)
     
     # Paste the shirt onto the input image
-    input_image.paste(shirt, shirt)
+    input_image.paste(shirt, (0, 0), shirt)
     
     # Save the result
     input_image.save(output_file)
