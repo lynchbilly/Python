@@ -1,0 +1,11 @@
+Problem Set 4
+What to Do
+Log into cs50.dev, which is a cloud-based version of Visual Studio Code (VS Code) that provides you with your very own “codespace” with everything that you need for the course pre-installed. No need to download and install VS Code or Python on your own Mac or PC!
+Execute update50 in your codespace’s terminal window to ensure that your codespace is up-to-date; if prompted, click Rebuild now.
+Submit all of the problems below:
+Emojize
+Frank, Ian and Glen’s Letters
+Adieu, Adieu
+Guessing Game
+Little Professor
+Bitcoin Price Index
