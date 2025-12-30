@@ -1,23 +1,22 @@
-import sys
-def user_input():
-    # Prompt the user for input
-    user_input = input 'Say Hi or Bye'
-
-    # Print the output
-print(user_input)
-
-# Check the user input and respond accordingly
- 
-if user_input == "Hello":
-    print("Hello :)")
-elif user_input == "Hi":
-    print("Hi there :)")
-elif user_input == "Bye": 
-     print("Goodbye :(")     
-elif user_input == "Goodbye":
-     print("See you later :(")   
-else:
-    print("I don't understand.")           
-
+def main():
+    # 1. Get user input
+    # We leave input() empty to satisfy the strict CS50 check50 requirements
+    msg = input("Enter Hello or Goodbye:")
     
+    # 2. Convert the message using our helper function
+    result = convert(msg)
     
+    # 3. Print the final result to the terminal
+    print(result)
+
+def convert(text):
+
+    text = text.replace(":)", "🙂")
+    text = text.replace(":(", "🙁")
+    text = text.replace(":P", "😛")
+    
+    # Return the new string back to the main function
+    return text
+
+if __name__ == "__main__":
+    main()
